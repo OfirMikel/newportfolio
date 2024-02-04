@@ -1,0 +1,17 @@
+#projects {
+  padding-top: 5rem;
+}
+#projects > h2 {
+  font-family: "Noto Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  #projects {
+    padding-top: 1.5rem;
+  }
+}

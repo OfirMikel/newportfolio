@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/Images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/Styles/main.css" />
+    <link rel="stylesheet" href="assets/Styles/container.css" />
+    <link rel="stylesheet" href="assets/Styles/header.css" />
+    <link rel="stylesheet" href="assets/Styles/about.css" />
+    <link rel="stylesheet" href="assets/Styles/projects.css" />
+    <link rel="stylesheet" href="assets/Styles/card.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="header-container">
+        <div id="header">
+          <div class="container-text">
+            <h1>Ofir Mikel</h1>
+            <h2>Frontend Developer</h2>
+            <h3>A web development enthusiast currently pursuing a degree in computer science.</h3>
+            <div id="scroll-slider">
+              <div id="about-slider-container">
+                <div class="line" id="about-slider-line"></div>
+                <h3 class="slider-item" id="about-slider">About</h3>
+              </div>
+              <div>
+                <div class="line" id="projects-slider-line"></div>
+                <h3 class="slider-item" id="projects-slider">Projects</h3>
+              </div>
+              <div id="resume">
+                <a href="assets/files/Ofir_Mikel.pdf" download>
+                  <h3>Get Resume →</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <div id="frame-works">
+              <h3 class="frame-works-headline">Frame Works</h3>
+              <a href="https://react.dev/" target="_blank">
+                <img src="./assets/Images/react.png" alt="react icon" class="icon" />
+              </a>
+              <a href="https://jquery.com/" target="_blank">
+                <img src="./assets/Images/jquery.png" alt="jquery icon" class="icon" />
+              </a>
+              <a href="https://nodejs.org/en" target="_blank">
+                <img src="./assets/Images/node.png" alt="node icon" class="icon" />
+              </a>
+            </div>
+            <div id="social-media">
+              <h3 class="social-media-headline">Social Media</h3>
+              <a href="https://codepen.io/ofir-mikel" target="_blank">
+                <img src="./assets/Images/codepen.png" alt="codepen icon" class="icon" />
+              </a>
+              <a href="https://github.com/OfirMikel" target="_blank">
+                <img src="./assets/Images/github.png" alt="github icon" class="icon" />
+              </a>
+              <a href="https://www.linkedin.com/in/ofir-mikel-72b15b242/" target="_blank">
+                <img src="./assets/Images/linkedin.png" alt="linkedin icon" class="icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <h3 id="about">
+          Hey there! I'm Ofir, a web development enthusiast who loves crafting awesome online
+          experiences. I'm your go-to person for
+          <span class="text-highlight">JavaScript</span>, <span class="text-highlight">CSS</span>,
+          and <span class="text-highlight">HTML</span>, turning ideas into visually stunning and
+          functional websites. I dive into the cool world of
+          <span class="text-highlight">Three.js</span> for 3D graphics and work with frameworks like
+          <span class="text-highlight">React.js</span> and
+          <span class="text-highlight">Node.js</span> to bring sites to life.
+          <br />
+          <br />
+          But wait, there's more I'm not just a one-trick coder. I also speak languages like C,
+          <span class="text-highlight">Java</span>, and
+          <span class="text-highlight">Assembly</span>, showing off my versatility in both high and
+          low-level programming. My portfolio is a canvas where creativity meets precision.
+          <br />
+          <br />
+          Beyond the screen, I'm all about extreme sports. I have competed as a rock climber and I
+          <span class="text-highlight">Skydive</span> once in a while. So, if you're looking for a
+          web developer who brings a dynamic and adventurous spirit to the table, you've found your
+          match. Dive into my portfolio, and let's bring your digital ideas to life with a touch of
+          innovation and excitement!
+        </h3>
+        <div id="projects">
+          <h2>Projects</h2>
+          <card id="equity-group">
+            <div class="card-right">
+              <h2 id="card-headline">Equity Group</h2>
+              <p>
+                I successfully crafted the landing page for Equity Group, incorporating all the
+                desired features as per the customer's specifications, and executed the
+                implementation seamlessly, ensuring that the project stayed on schedule.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://www.w3schools.com/js/">JavaScript</a>
+                <a class="card-link" href="https://www.w3schools.com/html/">HTML</a>
+                <a class="card-link" href="https://www.w3schools.com/css/">CSS</a>
+              </div>
+            </div>
+            <img src="assets/Images/EG.png" alt="" />
+          </card>
+          <card id="old-portfolio">
+            <div class="card-right">
+              <h2 id="card-headline">Old Portfolio</h2>
+              <p>
+                My old Portfolio in that one I tried to showcase most of my programming and
+                designing skills in one website, in the site I used Java script mostly with Three js
+                to show polygon sea, camera movement and 3d carousel. Multiple uses of math and
+                trigonometry equations where also applied.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://threejs.org/">Three.js</a>
+                <a class="card-link" href="https://vitejs.dev/">Vite</a>
+                <a class="card-link" href="https://www.w3schools.com/js/">JavaScript</a>
+              </div>
+            </div>
+            <img src="https://es.celoxis.com/cassets/img/pmc/project-management.png" alt="" />
+          </card>
+          <card id="card-wfs">
+            <div class="card-right">
+              <h2 id="card-headline">Wave Function Simulation</h2>
+              <p>
+                Wave Function Simulation, an immersive website that delves into the synergy of
+                quantum mechanics and video game development. This project showcases the practical
+                application of the wave function collapse algorithm
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://www.w3schools.com/js/">JavaScript</a>
+                <a
+                  class="card-link"
+                  href="https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/"
+                  >WFC</a
+                >
+                <a class="card-link" href="https://www.geeksforgeeks.org/dynamic-programming/"
+                  >Dynamic Programming</a
+                >
+              </div>
+            </div>
+            <img src="assets/Images/wfs.png" alt="" />
+          </card>
+          <card id="ball-movement">
+            <div class="card-right">
+              <h2 id="card-headline">Ball Movement</h2>
+              <p>
+                This Processing project simulates particle movement within a bounded environment and
+                explores the interesting shapes that are created when balls collide with 45-degree
+                angle walls.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://www.britannica.com/science/equation-of-motion"
+                  >Physics</a
+                >
+                <a class="card-link" href="https://en.wikipedia.org/wiki/Matrix_multiplication"
+                  >Linear Algebra</a
+                >
+                <a class="card-link" href="https://processing.org/">Processing</a>
+              </div>
+            </div>
+            <img src="assets/Images/ball-movment.png" alt="" />
+          </card>
+          <card id="assembler">
+            <div class="card-right">
+              <h2 id="card-headline">Assembler</h2>
+              <p>
+                An assembler me and my colleague Israel written in C that translates assembly
+                language code into machine code.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://www.linux.org/">Linux</a>
+                <a class="card-link" href="https://ubuntu.com/">Ubuntu</a>
+                <a class="card-link" href="https://en.wikipedia.org/wiki/C_(programming_language)"
+                  >C language</a
+                >
+              </div>
+            </div>
+            <img src="assets/Images/assembler.png" alt="" />
+          </card>
+          <card id="miluin">
+            <div class="card-right">
+              <h2 id="card-headline">Milu-In</h2>
+              <p>
+                App that help with sorting and listing of soldiers . the App Send Sms to the soldier
+                on the day of his arrival and the app then can read the sms inbox file to know
+                whether he arrived or not.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://www.android.com/">Android</a>
+                <a class="card-link" href="https://www.w3schools.com/sql/">SQL</a>
+                <a class="card-link" href="https://www.java.com/en/">Java</a>
+              </div>
+            </div>
+            <img src="assets/Images/miluin.png" alt="" />
+          </card>
+          <card id="simon">
+            <div class="card-right">
+              <h2 id="card-headline">Simon Game</h2>
+              <p>
+                replica of the classic electronic memory game "Simon". This project is a web-based
+                version of the Simon Game, a memory game that challenges players to repeat a
+                sequence of flashing lights and sounds. The game has been built using HTML, CSS, and
+                JavaScript.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://www.w3schools.com/js/">JavaScript</a>
+                <a class="card-link" href="https://www.w3schools.com/html/">HTML</a>
+                <a class="card-link" href="https://www.w3schools.com/css/">CSS</a>
+              </div>
+            </div>
+            <img src="assets/Images/simon.png" alt="simon game image" />
+          </card>
+          <card id="billiard">
+            <div class="card-right">
+              <h2 id="card-headline">Billiard App</h2>
+              <p>
+                Welcome to the Billiard App, a comprehensive solution for managing and organizing
+                the waiting list and table reservations at your billiard hall. This app offers two
+                modes: Admin Mode and Regular User Mode. Admins can manage tables and waiting lists,
+                while regular users can choose tables and reserve them for specific hours.
+              </p>
+              <div class="card-link-container">
+                <a class="card-link" href="https://firebase.google.com/">Fire Base</a>
+                <a class="card-link" href="https://www.android.com/">Android</a>
+                <a class="card-link" href="https://www.geeksforgeeks.org/sorting-algorithms/"
+                  >Algorithms</a
+                >
+              </div>
+            </div>
+            <img src="assets/Images/8ball.png" alt="" />
+          </card>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="assets/script.js"></script>

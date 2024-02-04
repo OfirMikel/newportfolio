@@ -1,0 +1,24 @@
+@media screen and (max-width: 1024px) {
+  .page-container {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+.page-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+.page-container > * {
+  flex: 1;
+}
+#content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
