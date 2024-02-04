@@ -60,19 +60,27 @@ var about = document.getElementById("about");
 window.addEventListener("scroll", function () {
   if (isElementInViewport(about)) {
     lineStyleActive(aboutSlider, aboutSliderText);
-    lineStyleDeactivate(projectsSlider, projectsSliderText);
   } else {
     lineStyleDeactivate(aboutSlider, aboutSliderText);
+  }
+
+  if (isElementInViewport(projects) && !isElementInViewport(about)) {
     lineStyleActive(projectsSlider, projectsSliderText);
+  } else {
+    lineStyleDeactivate(projectsSlider, projectsSliderText);
   }
 });
 
-if (!isElementInViewport(projects)) {
+if (isElementInViewport(about)) {
   lineStyleActive(aboutSlider, aboutSliderText);
-  lineStyleDeactivate(projectsSlider, projectsSliderText);
 } else {
   lineStyleDeactivate(aboutSlider, aboutSliderText);
+}
+
+if (isElementInViewport(projects) && !isElementInViewport(about)) {
   lineStyleActive(projectsSlider, projectsSliderText);
+} else {
+  lineStyleDeactivate(projectsSlider, projectsSliderText);
 }
 
 projectsSliderText.addEventListener("click", function () {
@@ -83,34 +91,34 @@ aboutSliderText.addEventListener("click", function () {
   smoothScrollTo(about.offsetTop - 120, 500);
 });
 
-document.getElementById("equity-group").addEventListener("click", function () {
+document.getElementById("equity-group-image").addEventListener("click", function () {
   navigateTo("https://ofirmikel.github.io/Equity-Group/");
 });
 
-document.getElementById("old-portfolio").addEventListener("click", function () {
+document.getElementById("old-portfolio-image").addEventListener("click", function () {
   navigateTo("https://ofirmikel.github.io/Portfolio/");
 });
 
-document.getElementById("card-wfs").addEventListener("click", function () {
-  navigateTo("https://github.com/OfirMikel/WFS-Demonstration");
+document.getElementById("card-wfs-image").addEventListener("click", function () {
+  navigateTo("https://ofirmikel.github.io/WFS-Demonstration/");
 });
 
-document.getElementById("ball-movement").addEventListener("click", function () {
+document.getElementById("ball-movement-image").addEventListener("click", function () {
   navigateTo("https://github.com/OfirMikel/Ball-Movment");
 });
 
-document.getElementById("assembler").addEventListener("click", function () {
+document.getElementById("assembler-image").addEventListener("click", function () {
   navigateTo("https://github.com/OfirMikel/Assembler");
 });
 
-document.getElementById("miluin").addEventListener("click", function () {
+document.getElementById("miluin-image").addEventListener("click", function () {
   navigateTo("https://github.com/OfirMikel/Milu-In-App");
 });
 
-document.getElementById("simon").addEventListener("click", function () {
+document.getElementById("simon-image").addEventListener("click", function () {
   navigateTo("https://github.com/OfirMikel/Simon-Game");
 });
 
-document.getElementById("billiard").addEventListener("click", function () {
+document.getElementById("billiard-image").addEventListener("click", function () {
   navigateTo("https://github.com/OfirMikel/Billiard-App");
 });
