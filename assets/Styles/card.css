@@ -1,7 +1,9 @@
 @media screen and (max-width: 800px) {
   card {
     flex-direction: column;
+
     img {
+      opacity: 0.9;
       min-width: 100%;
     }
   }
@@ -13,11 +15,6 @@
 
 /* --------------------------------------------------- */
 card {
-  animation: card-fadein linear forwards;
-  animation-timeline: view();
-  animation-range: entry 10%;
-  opacity: 0.1;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +42,7 @@ card {
     font-weight: 200;
     line-height: 1.5;
     margin: 0;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
     transition: all 0.2s ease-in;
   }
 }
@@ -102,10 +99,5 @@ card:hover {
   .card-right > p {
     color: rgba(255, 255, 255, 0.7);
     transition: all 0.2s ease-in;
-  }
-}
-@keyframes card-fadein {
-  to {
-    opacity: 1;
   }
 }

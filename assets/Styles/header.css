@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 14rem;
+  gap: 15rem;
   padding-top: calc(6 * var(--small-text));
   padding-bottom: calc(6 * var(--small-text));
   top: 0px;
@@ -140,6 +140,6 @@
 
 @media (max-width: 1024px) {
   #header {
-    gap: 3rem;
+    gap: 15rem;
   }
 }

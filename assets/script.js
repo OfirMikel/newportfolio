@@ -67,7 +67,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-if (isElementInViewport(about)) {
+if (!isElementInViewport(projects)) {
   lineStyleActive(aboutSlider, aboutSliderText);
   lineStyleDeactivate(projectsSlider, projectsSliderText);
 } else {
