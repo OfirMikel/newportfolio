@@ -3,7 +3,7 @@
   font-size: clamp(var(--small-text-phone), 1vw, var(--small-text));
   font-style: normal;
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.65;
   color: rgba(255, 255, 255, 0.5);
   max-width: 90%;
 }
@@ -12,4 +12,12 @@
   font-weight: 700;
   background-clip: text;
   background-image: linear-gradient(90deg, #02aabd, #00cdac);
+}
+#about-headline {
+  font-family: "Noto Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.3);
 }
